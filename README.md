@@ -1,4 +1,5 @@
-# Cubix - The AI Rubik's Cube Detector Model
+# Draft plan: Cubix - The AI Rubik's Cube Detector Model
+
  
 ## Tech stack
 tensorflow
@@ -22,3 +23,36 @@ This project will explore which techniques are best for training a model to dete
 - How to label the images?
 - How to split the data into training and testing sets?
 - How to augment the data?
+
+
+- Each face has a center piece, and one center piece, four corner, and four edge pieces.
+
+-https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb#scrollTo=he5u_okAYS4a
+
+tf.keras API, the layers you mentioned—Flatten, Dense, and Dropout—eac
+
+## Brainstorming
+
+for CFOP training model: https://www.kaggle.com/datasets/antbob/rubiks-cube-cfop-solutions/data
+
+
+
+they generated 10000 datasets to train this model 🤯 they did not do it by hand though.. looks like they made use of a python library called `PyCuber` which generated their datasets for them
+
+- a bit of a cheat but I guess if it exists already why build all this manually lol
+- I wonder if this can be broken down into individual models / steps some how instead if you want to make a "trainer"?
+- a model per "State"? Cross, First two layers, Orientation of the last layer, Permutation of the last layer
+- or perhaps it can be labeled to detect what state its in and continue from there
+maybe we can feel in less training data if we use something like jperms as its training data? 🤷‍♂️
+NOTE this is for solving the cube
+
+We are doing a step they don't do, which is trying to actually detect and current cube state..
+
+so I imagine there is at least two steps / models to train
+- cube detection model
+- CFOP solving model
+
+#2 could also be solved via algos / library (such as the pycuber library) if we dont want to build that right away 
+ 
+
+ https://www.kaggle.com/datasets/antbob/rubiks-cube-cfop-solutions/data
