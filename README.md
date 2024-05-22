@@ -123,3 +123,14 @@ magick convert foo.HEIC foo.jpg
 # bulk convert multiple images
 magick mogrify -strip -monitor -format png *.JPG
 ```
+
+
+
+
+
+python model_main_tf2.py --model_dir=models/custom_ssd_resnet50_v1_fpn --pipeline_config_path=models/custom_ssd_resnet50_v1_fpn/pipeline.config
+
+
+tensorboard --logdir=models/custom_ssd_resnet50_v1_fpn
+
+we build a objecvct detection model by following this tutorial, https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html and 
