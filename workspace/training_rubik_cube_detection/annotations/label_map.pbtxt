@@ -1,0 +1,28 @@
+item {
+  id: 1
+  name: 'face'
+}
+item {
+  id: 2
+  name: 'red_tile'
+}
+item {
+  id: 3
+  name: 'white_tile'
+}
+item {
+  id: 4
+  name: 'blue_tile'
+}
+item {
+  id: 5
+  name: 'orange_tile'
+}
+item {
+  id: 6
+  name: 'green_tile'
+}
+item {
+  id: 7
+  name: 'yellow_tile'
+}

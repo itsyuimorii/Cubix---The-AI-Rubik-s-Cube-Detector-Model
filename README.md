@@ -113,3 +113,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
  
  
+```
+# install imagemagick
+brew install imagemagick
+
+# convert a single image
+magick convert foo.HEIC foo.jpg
+
+# bulk convert multiple images
+magick mogrify -strip -monitor -format png *.JPG
+```
