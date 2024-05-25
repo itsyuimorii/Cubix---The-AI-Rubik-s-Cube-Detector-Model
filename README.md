@@ -1,8 +1,22 @@
 # Draft plan: Cubix - The AI Rubik's Cube Detector Model
 
+## Preparing the data
+
+- collection of inputs, that needs to be labeled
+  - lableme is used to label the images
+- split the data into training and testing sets
+- 90/10 split training/testing  (90% training, 10% testing)
+
+## Training the model
+- copy modelgarden to get the tensorflow Object Detection API 
+- in the repo, there is a slection of pre-training model that we could take adventage of it instead of building it from scratch.
+- We took our own inputs, and feed into it, start training the model
+- We can use the Tensorboard to monitor the training process
  
+Setting up 
+
+
 ## May 20 
-a
 ### Tech stack
 tensorflow
 Javascript / python? 
@@ -125,12 +139,33 @@ magick mogrify -strip -monitor -format png *.JPG
 ```
 
 
-
-
-
 python model_main_tf2.py --model_dir=models/custom_ssd_resnet50_v1_fpn --pipeline_config_path=models/custom_ssd_resnet50_v1_fpn/pipeline.config
 
 
 tensorboard --logdir=models/custom_ssd_resnet50_v1_fpn
 
+python model_main_tf2.py --model_dir=models/custom_ssd_resnet50_v1_fpn --pipeline_config_path=models/custom_ssd_resnet50_v1_fpn/pipeline.config --checkpoint_dir=models/custom_ssd_resnet50_v1_fpn
+
+export model
+
+
+
 we build a objecvct detection model by following this tutorial, https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html and 
+
+
+
+May 24 Update 
+
+also out of curiosity I reordered the labels putting the face last.. idk if that changed anything but I did get different results.. I might change it back to see if it will behave differently again...
+
+the model for sure needs more input data
+its only seeing Red right now, and it thinks white is red
+interesting enough this is how that one github project I found does their labels too
+https://github.com/Hemant-Mulchandani/Rubiks-Cube-Face-Detection-Model/blob/main/annotations/label_map.pbtxt
+again no idea if the order matters at all (I think it doesnt) I just think we didnt give it enough training data for it to figure out everything
+
+seems like it only found face before because it was first.. now its only finding red..
+
+screenshots/Screenshot 2024-05-25 at 11.14.09 AM.png
+![](screenshots/Screenshot 2024-05-25 at 11.14.09 AM.png)
+![](screenshots/Screenshot 2024-05-25 at 11.14.12 AM.png)
