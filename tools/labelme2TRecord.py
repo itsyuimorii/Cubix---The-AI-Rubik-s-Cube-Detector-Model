@@ -16,7 +16,7 @@ def create_tf_example(image_path, annotations, label_map):
         encoded_image_data = fid.read()
     
     filename = os.path.basename(image_path).encode('utf8')
-    image_format = b'jpeg'  # or 'png'
+    image_format = b'png'
     
     xmins = []
     xmaxs = []

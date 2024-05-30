@@ -2,10 +2,10 @@ import os
 MODELS_DIR = 'exported-models'
 
 # ~~~~~~~~~~~~~~
-MODEL_NAME = 'rubiks_model_2300_steps'
+MODEL_NAME = 'rubiks_model'
 # Next we load the downloaded model
-PATH_TO_CKPT = os.path.join(MODELS_DIR, os.path.join(MODEL_NAME, 'checkpoint/'))
-PATH_TO_CFG = os.path.join(MODELS_DIR, os.path.join(MODEL_NAME, 'pipeline.config'))
+PATH_TO_CKPT = os.path.join(MODELS_DIR, MODEL_NAME, 'checkpoint')
+PATH_TO_CFG = os.path.join(MODELS_DIR, MODEL_NAME, 'pipeline.config')
 LABEL_FILENAME = 'label_map.pbtxt'
 PATH_TO_LABELS = os.path.join("annotations", LABEL_FILENAME)
 
