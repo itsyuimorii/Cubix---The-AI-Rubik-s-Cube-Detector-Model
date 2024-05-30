@@ -169,3 +169,16 @@ seems like it only found face before because it was first.. now its only finding
 screenshots/Screenshot 2024-05-25 at 11.14.09 AM.png
 ![](screenshots/Screenshot 2024-05-25 at 11.14.09 AM.png)
 ![](screenshots/Screenshot 2024-05-25 at 11.14.12 AM.png)
+
+
+May 29 
+
+
+when running python image_object_detection_saved_model.py / image_object_dection_checkpoint.py / camera_object_detection.py:
+you can update the parameters for the max boxes to draw and min score (so you dont see a lot of clutter! lots of 30% matches etc...)
+          max_boxes_to_draw=200,
+          min_score_thresh=.30,
+
+could be something like this instead:
+          max_boxes_to_draw=20,
+          min_score_thresh=.90,
