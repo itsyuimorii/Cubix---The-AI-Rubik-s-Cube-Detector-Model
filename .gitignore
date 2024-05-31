@@ -1,1 +1,5 @@
 models-garden/
+exported-models/
+models/
+!models/*/pipeline.config
+pre-trained-models/
