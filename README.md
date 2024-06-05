@@ -182,3 +182,42 @@ you can update the parameters for the max boxes to draw and min score (so you do
 could be something like this instead:
           max_boxes_to_draw=20,
           min_score_thresh=.90,
+
+
+QQ: 
+
+## Using SSD ResNet50 as a pre-trained model, and update the pipeline.config file to train the model
+- Using ImageMagick to convert the images to png format
+- Real-time face detection
+
+In this project, I am currenly using SSD ResNet50 as a pre-trained model, and update the pipeline.config file to train the model.
+In this video, is a real-time face detection using the model that I trained. ratio is 90/10 for training and testing data
+1. Is there genreral rule of saying how many images I should triaing   for the model?
+2. I heard the good idea is have balance approxiamte equal training data fort each label, in my case, I have 1 face label per picture, but I will have 9 tiles lable per face, the face label will be under-represented, is that a problem?
+
+I using SSD ResNet50 
+
+- ratio is 90/10 for training and testing data
+- for the label, we have 6 labels: red, green, blue, yellow, orange, white, approximate 140 for each 
+
+- the model is trained on 1000 steps, and the loss is 0.2, the accuracy is 0.9  
+My question is run python image_object_detection_saved_model.py we get
+
+
+my question is what is the standard loss and accuracy for the model?
+
+Ifound some tutorial did mention about loss accu
+
+I already did  use the model to detect the colors of the cube in real-time.
+My next goal is to build some sort of virtual respresentation of the cube, and traing the secondary model to learn CFOP and geneerate the solution algorithm.
+
+the sample video here I tried ratio is 90/10 for training and testing data, i trained 95 images appromately. 
+so is it possible  i could move forward ot the stage 2 to build the model to learn CFOP and generate the solution algorithm?
+and the same time, I training more iamges to improve the accuracy of the model. 
+
+
+
+
+CFOP : 
+1. because its unrealistic amount of time to genereate all training data from stratch, we can utilizied the py lib to pycuber to generate the training data 
+2. we could also use this pycuber library , or javascript equivalent (to create a web app) to solve the cube without having to build the model to solve it
