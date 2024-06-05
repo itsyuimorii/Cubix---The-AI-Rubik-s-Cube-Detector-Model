@@ -75,8 +75,8 @@ try:
             detections['detection_scores'],
             category_index,
             use_normalized_coordinates=True,
-            max_boxes_to_draw=200,
-            min_score_thresh=.80,
+            max_boxes_to_draw=15,
+            min_score_thresh=.85,
             agnostic_mode=False)
 
         # Display output in BGR format as captured
