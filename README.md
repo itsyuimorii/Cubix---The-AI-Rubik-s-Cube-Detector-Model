@@ -220,4 +220,4 @@ and the same time, I training more iamges to improve the accuracy of the model.
 
 CFOP : 
 1. because its unrealistic amount of time to genereate all training data from stratch, we can utilizied the py lib to pycuber to generate the training data 
-2. we could also use this pycuber library , or javascript equivalent (to create a web app) to solve the cube without having to build the model to solve it
+2. we could also use this pycuber library , or javascript equivalent (to create a web app) to solve the cube without having to build the model to solve itark
