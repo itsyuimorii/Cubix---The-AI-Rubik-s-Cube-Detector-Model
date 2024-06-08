@@ -187,4 +187,8 @@ could be something like this instead:
 
 June
 
+ ```
  python test_camera_detection.py 
+
+ tensorflowjs_converter --input_format=tf_saved_model --output_format=tfjs_graph_model --signature_name=serving_default --saved_model_tags=serve ./exported-models/rubiks_model/saved_model ./tfjs
+ ```
