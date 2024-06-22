@@ -192,3 +192,16 @@ June
 
  tensorflowjs_converter --input_format=tf_saved_model --output_format=tfjs_graph_model --signature_name=serving_default --saved_model_tags=serve ./exported-models/rubiks_model/saved_model ./tfjs
  ```
+June 7-10
+
+there seems to be an issue when exporting the model to tensorflowjs, the model is not working as expected. switching to other versions of tensorflow and retraining still appeared to give other problems.  attempting to switch to TF Vision also had some issues when trying to export (crashing).  In my testing with a sample model, switching to a docker container with preinstalled tensorflow and cuda components isntalled seemms to be more succesfull so far.  There was still some issues with tensorflowjs pypi library as it wanted to downgrade tensorflow when installing but creating a custom docker image to prevent this seems to work so far
+
+I am able to succesfully export to a tensorflowjs model now, however I have not tested this yet with the rubiks model, I will need to migrate this code to work with TF-Vision instead
+
+- Alternatively since there was more success with the docker contrainer, I could try downgrading to an older container to see if this current project will build successfully there
+
+
+## Tensorflow js Models garden 
+- research floder is under maintain .....
+- switch to TF version 
+- 
