@@ -1,0 +1,190 @@
+{
+  "version": "5.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "face",
+      "points": [
+        [
+          1366.3636363636363,
+          438.36363636363643
+        ],
+        [
+          2529.9999999999995,
+          1587.4545454545453
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "red_tile",
+      "points": [
+        [
+          1375.4545454545455,
+          436.54545454545456
+        ],
+        [
+          1750.0,
+          814.7272727272727
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "red_tile",
+      "points": [
+        [
+          1757.5221238938052,
+          438.8141592920354
+        ],
+        [
+          2140.7079646017696,
+          809.6106194690266
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "red_tile",
+      "points": [
+        [
+          2144.247787610619,
+          432.6194690265487
+        ],
+        [
+          2523.008849557522,
+          807.8407079646017
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "red_tile",
+      "points": [
+        [
+          1374.3362831858406,
+          817.5752212389381
+        ],
+        [
+          1753.0973451327432,
+          1203.41592920354
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "red_tile",
+      "points": [
+        [
+          1753.0973451327432,
+          812.2654867256637
+        ],
+        [
+          2146.0176991150443,
+          1204.3008849557523
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "red_tile",
+      "points": [
+        [
+          2145.1327433628317,
+          809.6106194690266
+        ],
+        [
+          2527.433628318584,
+          1201.6460176991152
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "red_tile",
+      "points": [
+        [
+          1371.6814159292035,
+          1206.9557522123894
+        ],
+        [
+          1752.2123893805308,
+          1592.796460176991
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "red_tile",
+      "points": [
+        [
+          1753.0973451327432,
+          1202.5309734513276
+        ],
+        [
+          2144.247787610619,
+          1590.141592920354
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "red_tile",
+      "points": [
+        [
+          2146.0176991150443,
+          1200.7610619469028
+        ],
+        [
+          2528.318584070796,
+          1588.3716814159293
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "Cube_00054.jpg",
+  "imageData": null,
+  "imageHeight": 1844,
+  "imageWidth": 4000
+}

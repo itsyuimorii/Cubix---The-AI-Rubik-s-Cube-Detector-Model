@@ -1,5 +1,9 @@
-models-garden/
-exported-models/
-models/
-!models/*/pipeline.config
-pre-trained-models/
+trained_model/
+exported_model/
+web_model/
+tfrecords/
+
+__pycache__/
+
+SerializedExampleImage*
+ShowBatchImage*
